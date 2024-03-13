@@ -1,0 +1,19 @@
+@import "colors.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --font-primary: "IBM Plex Sans";
+    --font-weight: 400;
+}
+base {
+    background-color: var(--base);
+    color: var(--text);
+/*    font-family: "IBM Plex Sans"; */
+}
+.page-header {
+    background-color: inherit;
+    border: 2px solid var(--pink);
+    border-radius: 8px;
+    color: var(--text);
+    text-align: center;
+}
