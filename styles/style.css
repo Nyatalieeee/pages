@@ -14,11 +14,12 @@ body {
     margin: 35px;
     padding: 14px;
     text-align: left;
-    width: 450px;
+    width: 390px;
 }
 .container {
     background: var(--base);
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     margin: auto;
     width: 90%;
@@ -29,9 +30,10 @@ body {
     border-radius: 12px;
     color: var(--text);
     margin: 35px;
+    margin-top: 0px !important;
     padding: 14px;
     text-align: left;
-    width: 350px;
+    width: 390px;
 }
 .links a {
     color: var(--pink);
@@ -48,15 +50,7 @@ body {
     margin: 35px;
     padding: 14px;
     text-align: left;
-    width: 360px;
-}
-.placeholder {
-    background: var(--mantle);
-    border-radius: 12px;
-    color: var(--text);
-    margin: 35px;
-    padding: 14px;
-    width: 340px;
+    width: 335px;
 }
 .pronouns ul > li {
     float: left;
@@ -64,8 +58,24 @@ body {
     padding-top: 10px; 
     padding-bottom: 10px;
 }
+.placeholder {
+    background: var(--mantle);
+    border-radius: 12px;
+    color: var(--text);
+    margin: 35px;
+    margin-top: 0px !important;
+    padding: 14px;
+    width: 335px;
+}
 .subtext {
     color: var(--subtext1);
     font-family: "Fira Code", monospace;
     font-weight: 400;
+}
+
+/* mobile compatibility */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
 }
