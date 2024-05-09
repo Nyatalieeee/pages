@@ -27,4 +27,6 @@
     --mantle: #1e2030;
     --crust: #181926;
 
+    --accent-color: var(--pink);
+
 }
