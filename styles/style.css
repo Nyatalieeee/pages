@@ -53,12 +53,32 @@ header {
     justify-content: center;
     padding: 10px;
 }
+.container-proj {
+    display: grid;
+    padding: 8px;
+    width: 100%;
+}
 .content {
     background-color: var(--mantle);
     border-radius: 10px;
     margin: 15px;
     padding: 15px;
     width: 45%;
+}
+.content-prns {
+    background-color: var(--mantle);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    width: 30%;
+}
+.content-proj {
+    background-color: var(--mantle);
+    border-radius: 10px;
+    margin-left: 35px !important;
+    margin: 20px;
+    padding: 15px;
+    width: 60%;
 }
 .sidebar {
     background-color: var(--base);
@@ -79,7 +99,7 @@ img-container {
     }
     .content {
         margin: 10px;
-        padding: 5px;
+        padding: 8px;   
         width: 85%;
     }
     header {
@@ -91,5 +111,10 @@ img-container {
             width: 70px; 
             height: 70px;
         }
+    }
+    .navbtn,
+    .navbtn-sel {
+        margin-top: 5px;
+        width: 135px;
     }
 }
