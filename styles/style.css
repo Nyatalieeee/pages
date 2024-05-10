@@ -70,7 +70,38 @@ header {
     border-radius: 10px;
     margin: 20px;
     padding: 15px;
-    width: 30%;
+    padding-left: 20px;
+    width: 20%;
+
+    ul > li { 
+        padding: 2px;
+
+        &::marker { 
+            content: none; 
+        }
+    }
+
+    /* for pronoun page */
+
+    .fa-heart::before { color: var(--accent-color); }
+    .prns-yes { color: var(--accent-color); font-size: 105%; font-weight: 800; }
+
+    .fa-user-group::before { color: var(--red); }
+    .prns-onlyclose { color: var(--red); }
+
+    .prns-okay { color: var(--subtext1); }
+
+    .fa-thumbs-down::before { color: var(--overlay2); font-size: 90%; }
+    .prns-no { color: var(--overlay2); font-size: 90%; font-weight: 400; }
+
+    .fa-circle-xmark::before { color: var(--yellow); font-size: 90%; font-weight: 300; }
+    .prns-never { color: var(--yellow); }
+
+    .fa-face-grin-tongue::before { color: var(--peach); }
+    .prns-joking { color: var(--peach); }
+
+    .fa-id-card::before { color: var(--blue); }
+    .prns-nick { color: var(--blue); }
 }
 .content-proj {
     background-color: var(--mantle);
