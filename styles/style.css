@@ -22,6 +22,10 @@ pre {
     font-size: 95%;
     padding: 2px;
 }
+.subtext {
+    color: var(--subtext1);
+    font-size: 95%;
+}
 .pfp {
     img { border-radius: 50%; width: 150px; height: 150px; object-fit: contain; }
     margin-right: 10px;
@@ -176,35 +180,34 @@ header > .container > .content {
     margin-left: auto;
     margin-right: auto;
 }
+footer {
+    background-color: var(--mantle);
+    margin-top: 15px;
+    padding: 10px;
+        
+    ul > li::marker {
+        color: var(--accent-color)
+    }
+}
 
-/* pride footer :P */
-.trans-footer {
-    display: inline;
+/* pride footers :P */
+.trans {
+    display: flex;
     width: 100%;
 }
-.blue-left {
+.blue {
     background-color: var(--sapphire);
-    height: 20px;
+    height: 15px;
     width: 20%;
 }
-.pink-left {
+.pink {
     background-color: var(--pink);
-    height: 20px;
+    height: 15px;
     width: 20%;
 }
 .white {
     background-color: #f5f5f5; 
-    height: 20px;
-    width: 20%;
-}
-.pink-right {
-    background-color: var(--pink);
-    height: 20px;
-    width: 20%;
-}
-.blue-right {
-    background-color: var(--sapphire);
-    height: 20px;
+    height: 15px;
     width: 20%;
 }
 
@@ -248,5 +251,9 @@ header > .container > .content {
     .navbtn-sel {
         margin-top: 5px;
         width: 135px;
+    }
+    footer {
+        font-size: 95% !important;
+        padding: 4px !important;
     }
 }
