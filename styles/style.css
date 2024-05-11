@@ -111,6 +111,16 @@ header > .container > .content {
     padding-left: 20px;
     width: 20%;
 
+    a { 
+        color: var(--accent-color); 
+        font-weight: 500;
+        
+        &:hover { 
+            color: var(--text);
+            transition: all 0.2s;
+        }
+    }
+
     h2 { 
         color: var(--accent-color);
     }
@@ -238,7 +248,7 @@ footer {
         width: 80%;
     }
     header {
-        font-size: 0.85em
+        font-size: 0.80em
     }
     .pfp {
         margin: 0;
@@ -255,5 +265,10 @@ footer {
     footer {
         font-size: 95% !important;
         padding: 4px !important;
+    }
+    .blue,
+    .pink,
+    .white {
+        height: 8px !important;
     }
 }
