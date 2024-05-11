@@ -169,12 +169,12 @@ header > .container > .content {
 
     ul > li { padding: 2px; }
     a { 
-        color: var(--text); 
+        color: var(--accent-color); 
         font-size: 110%;
         font-weight: 500;
         
         &:hover { 
-            color: var(--accent-color); 
+            color: var(--text); 
             transition: color 0.2s;
         }
     }
