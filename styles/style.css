@@ -157,10 +157,25 @@ hr {
         flex-direction: column;
         padding: 10px;
     }
+    .container-proj {
+        width: auto;
+    }
     .content {
         margin: 10px;
-        padding: 8px;   
-        width: 85%;
+        padding: 12px;   
+        width: 80% !important;
+    }
+    .content-prns {
+        margin: 12px !important;
+        width: 60% !important;
+    }
+    .content-proj {
+        font-size: 90% !important;
+        margin: 15px !important;
+        width: auto !important;
+    }
+    hr {
+        width: 80%;
     }
     header {
         font-size: 0.85em
@@ -168,8 +183,8 @@ hr {
     .pfp {
         margin: 0;
         & img {
-            width: 70px; 
-            height: 70px;
+            width: 80px; 
+            height: 80px;
         }
     }
     .navbtn,
