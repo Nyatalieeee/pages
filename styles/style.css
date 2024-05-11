@@ -77,6 +77,22 @@ header > .container > .content {
     margin: 15px;
     padding: 15px;
     width: 45%;
+    
+    a { 
+        color: var(--accent-color); 
+        font-weight: 500;
+        
+        &:hover { 
+            color: var(--text);
+            transition: all 0.2s;
+        }
+    }
+}
+.links {
+    ul > li {
+        padding: 5px;
+        &::marker { color: var(--accent-color); }
+    }
 }
 .content-prns {
     background-color: var(--mantle);
