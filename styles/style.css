@@ -4,78 +4,271 @@ body {
     background: var(--base);
     color: var(--text);
     font-family: "IBM Plex Sans";
+    margin: 0;
 }
-.aboutme {
-    text-align: left;
-    background: var(--mantle);
-    border-radius: 12px;
-    color: var(--text);
-    font-weight: 500;
-    margin: 35px;
-    padding: 14px;
-    text-align: left;
-    width: 390px;
+*::selection {
+    color:var(--crust);
+    background-color: var(--lavender);
 }
-.container {
-    background: var(--base);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: auto;
-    width: 90%;
+header {
+    background-color: var(--mantle);
 }
-.links {
-    text-align: left;
-    background: var(--mantle);
-    border-radius: 12px;
-    color: var(--text);
-    margin: 35px;
-    margin-top: 0px !important;
-    padding: 14px;
-    text-align: left;
-    width: 390px;
+hr {
+    color: var(--subtext0);
+    width: 69%;
 }
-.links a {
-    color: var(--pink);
-    font-weight: 500;
-}
-.links ul > li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.pronouns {
-    background: var(--mantle);
-    border-radius: 12px;
-    color: var(--text);
-    margin: 35px;
-    padding: 14px;
-    text-align: left;
-    width: 335px;
-}
-.pronouns ul > li {
-    float: left;
-    text-align: inherit;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-}
-.placeholder {
-    background: var(--mantle);
-    border-radius: 12px;
-    color: var(--text);
-    margin: 35px;
-    margin-top: 0px !important;
-    padding: 14px;
-    width: 335px;
+pre {
+    font-family: 'Fira Code', monospace;
+    font-size: 95%;
+    padding: 2px;
 }
 .subtext {
     color: var(--subtext1);
-    font-family: "Fira Code", monospace;
-    font-weight: 400;
+    font-size: 95%;
+}
+.pfp {
+    img { border-radius: 50%; width: 150px; height: 150px; object-fit: contain; }
+    margin-right: 10px;
+}
+.navbtn {
+    background-color: var(--crust);
+    border-radius: 12px;
+    color: var(--subtext1);
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+.navbtn:hover {
+    background-color: var(--base);
+    color: var(--text);
+    transition: all 0.2s;
+}
+.navbtn-sel {
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    color: var(--crust);
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+.navbtn-sel:hover {
+    color: var(--base);
+    transition: color 0.2s;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.container-proj {
+    display: grid;
+    padding: 8px;
+    width: 100%;
+}
+.content-header {
+    margin: 15px;
+    padding: 15px;
+    width: 70%;
+}
+header > .container > .content {
+    background-color: var(--mantle);
+}
+.content {
+    background-color: var(--mantle);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 45%;
+    
+    a { 
+        color: var(--accent-color); 
+        font-weight: 500;
+        
+        &:hover { 
+            color: var(--text);
+            transition: all 0.2s;
+        }
+    }
+}
+.links {
+    ul > li {
+        padding: 5px;
+        &::marker { color: var(--accent-color); }
+    }
+}
+.content-prns {
+    background-color: var(--mantle);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    padding-left: 20px;
+    width: 20%;
+
+    a { 
+        color: var(--accent-color); 
+        font-weight: 500;
+        
+        &:hover { 
+            color: var(--text);
+            transition: all 0.2s;
+        }
+    }
+
+    h2 { 
+        color: var(--accent-color);
+    }
+
+    ul > li { 
+        padding: 2px;
+
+        &::marker { 
+            content: none; 
+        }
+    }
+
+    /* for pronoun page */
+
+    .fa-heart::before { color: var(--accent-color); }
+    .prns-yes { color: var(--accent-color); font-size: 105%; font-weight: 800; }
+
+    .fa-user-group::before { color: var(--red); }
+    .prns-onlyclose { color: var(--red); }
+
+    .prns-okay { color: var(--subtext1); }
+
+    .fa-thumbs-down::before { color: var(--overlay2); font-size: 90%; }
+    .prns-no { color: var(--overlay2); font-size: 90%; font-weight: 400; }
+
+    .fa-circle-xmark::before { color: var(--yellow); font-size: 90%; font-weight: 300; }
+    .prns-never { color: var(--yellow); }
+
+    .fa-face-grin-tongue::before { color: var(--peach); }
+    .prns-joking { color: var(--peach); }
+
+    .fa-id-card::before { color: var(--blue); }
+    .prns-nick { color: var(--blue); }
+}
+.content-proj {
+    background-color: var(--mantle);
+    border-radius: 10px;
+    margin-left: 35px !important;
+    margin: 20px;
+    padding: 15px;
+    width: 60%;
+
+    h2 { 
+        color: var(--accent-color);
+    }
+
+    ul > li { padding: 2px; }
+    a { 
+        color: var(--text); 
+        font-size: 110%;
+        font-weight: 500;
+        
+        &:hover { 
+            color: var(--accent-color); 
+            transition: color 0.2s;
+        }
+    }
+}
+.sidebar {
+    background-color: var(--base);
+    margin: 15px;
+    padding: 15px;
+    width: 20%;
+}
+.img-container {
+    img { border-radius: 0.6rem; width: 100%; height: 100%; object-fit: contain; }
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: var(--mantle);
+    margin-top: 15px;
+    padding: 10px;
+        
+    ul > li::marker {
+        color: var(--accent-color)
+    }
+}
+
+/* pride footers :P */
+.trans {
+    display: flex;
+    width: 100%;
+}
+.blue {
+    background-color: var(--sapphire);
+    height: 15px;
+    width: 20%;
+}
+.pink {
+    background-color: var(--pink);
+    height: 15px;
+    width: 20%;
+}
+.white {
+    background-color: #f5f5f5; 
+    height: 15px;
+    width: 20%;
 }
 
 /* mobile compatibility */
-@media (max-width: 800px) {
+@media (max-width: 690px) {
     .container {
         flex-direction: column;
+        padding: 10px;
+    }
+    .container-proj {
+        width: auto;
+    }
+    .content {
+        margin: 10px;
+        padding: 12px;   
+        width: 80% !important;
+    }
+    .content-prns {
+        margin: 12px !important;
+        width: 60% !important;
+    }
+    .content-proj {
+        font-size: 90% !important;
+        margin: 15px !important;
+        width: auto !important;
+    }
+    hr {
+        width: 80%;
+    }
+    header {
+        font-size: 0.80em
+    }
+    .pfp {
+        margin: 0;
+        & img {
+            width: 80px; 
+            height: 80px;
+        }
+    }
+    .navbtn,
+    .navbtn-sel {
+        margin-top: 5px;
+        width: 135px;
+    }
+    footer {
+        font-size: 95% !important;
+        padding: 4px !important;
+    }
+    .blue,
+    .pink,
+    .white {
+        height: 8px !important;
     }
 }
