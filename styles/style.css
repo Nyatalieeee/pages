@@ -40,10 +40,11 @@ pre {
     text-align: center;
     text-decoration: none;
     width: 90px;
-}
-.navbtn:hover {
-    background-color: var(--base);
-    color: var(--text);
+
+    &:hover {
+        background-color: var(--base);
+        color: var(--text);
+    }
     transition: all 0.2s;
 }
 .navbtn-sel {
@@ -56,9 +57,10 @@ pre {
     text-align: center;
     text-decoration: none;
     width: 90px;
-}
-.navbtn-sel:hover {
-    color: var(--base);
+
+    &:hover {
+        color: var(--base);
+    }
     transition: color 0.2s;
 }
 .container {
@@ -93,8 +95,8 @@ header > .container > .content {
         
         &:hover { 
             color: var(--text);
-            transition: all 0.2s;
         }
+        transition: all 0.2s;
     }
 }
 .links {
@@ -117,8 +119,8 @@ header > .container > .content {
         
         &:hover { 
             color: var(--text);
-            transition: all 0.2s;
         }
+        transition: all 0.2s;
     }
 
     h2 { 
@@ -175,8 +177,8 @@ header > .container > .content {
         
         &:hover { 
             color: var(--text); 
-            transition: color 0.2s;
         }
+        transition: color 0.2s;
     }
 }
 .sidebar {
