@@ -157,8 +157,16 @@ header > .container > .content {
     .fa-id-card::before { color: var(--blue); }
     .prns-nick { color: var(--blue); }
 }
+#pronouns.content-prns {
+    background-color: var(--surface0);
+    &:hover {
+        background-color: var(--surface1);
+    }
+    transition: all 0.2s;
+}
 .content-proj {
     background-color: var(--mantle);
+    border: 1px solid #00000000;
     border-radius: 10px;
     margin-left: 35px !important;
     margin: 20px;
@@ -169,7 +177,10 @@ header > .container > .content {
         color: var(--accent-color);
     }
 
-    ul > li { padding: 2px; }
+    ul > li { 
+        padding: 2px; 
+    }
+    
     a { 
         color: var(--accent-color); 
         font-size: 110%;
@@ -180,7 +191,13 @@ header > .container > .content {
         }
         transition: color 0.2s;
     }
+    &:hover {
+        border: 1px solid var(--subtext0);
+    }
+    transition: all 0.15s;
 }
+
+
 .sidebar {
     background-color: var(--base);
     margin: 15px;
