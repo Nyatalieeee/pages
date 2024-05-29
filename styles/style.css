@@ -159,8 +159,10 @@ header > .container > .content {
 }
 #pronouns.content-prns {
     background-color: var(--surface0);
+    box-shadow: 1px 1px 4px var(--crust);
     &:hover {
         background-color: var(--surface1);
+        box-shadow: 2px 2px 4px var(--mantle);
     }
     transition: all 0.2s;
 }
