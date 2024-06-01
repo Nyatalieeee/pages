@@ -160,6 +160,7 @@ header > .container > .content {
 #pronouns.content-prns {
     background-color: var(--surface0);
     box-shadow: 1px 1px 4px var(--mantle);
+
     &:hover {
         background-color: var(--surface1);
         box-shadow: 2px 2px 4px var(--base);
@@ -193,6 +194,7 @@ header > .container > .content {
         }
         transition: color 0.2s;
     }
+
     &:hover {
         border: 1px solid var(--subtext0);
     }
