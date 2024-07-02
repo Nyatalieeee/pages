@@ -1,6 +1,5 @@
 /* catppuccin macchiato palette :3 */
 :root {
-
     --accent-color: var(--pink);
 
     --rosewater: #f4dbd6;
@@ -24,10 +23,10 @@
     --overlay1: #8087a2;
     --overlay0: #6e738d;
     --surface2: #5b6078;
-    --surface1: #494d64;    
-    
+    --surface1: #494d64;
+
     /* standard ctp macchiato below */
-    
+
     --surface0: #363a4f;
     --base: #24273a;
     --mantle: #1e2030;
@@ -39,5 +38,4 @@
     --base: #040404;
     --mantle: #020202;
     --crust: #000000; */
-
-}   
+}
